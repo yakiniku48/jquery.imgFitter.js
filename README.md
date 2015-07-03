@@ -1,5 +1,9 @@
 # jQuery imgFitter plugin
 
+jQuery Plugin for resize and crop image without wrapper tags.
+
+[DEMO](http://yakiniku48.github.io/jquery.imgFitter.js/demo/)
+
 In your HTML:
 
 ```html

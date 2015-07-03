@@ -2,11 +2,62 @@
 <html lang="ja-JP">
 <head>
 <meta charset="UTF-8">
+<title>demo | jquery.imgFitter.js</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+	section {
+		margin: 40px 0 20px;
+	}
+</style>
 </head>
 <body>
-<img data-src="01.jpg" class="img-fitter" width="320" height="320">
-<img data-src="02.jpg" class="img-fitter" width="320" height="320">
+<main class="container" role="main">
+	<header class="page-header">
+		<h1>DEMO <small>jquery.imgFitter.js</small></h1>
+	</header>
+	<section>
+		<h3>Original</h3>
+		<p><img src="01.jpg"></p>
+		<pre>&lt;img src="01.jpg"&gt;</pre>
+	</section>
+	<section>
+		<h5>Square (200 x 200 cropped)</h5>
+		<p><img data-src="01.jpg" class="img-fitter" width="200" height="200"></p>
+		<pre>&lt;img data-src="01.jpg" class="img-fitter" width="200" height="200"&gt;</pre>
+	</section>
+	<section>
+		<h5>Horizon to Vertical (150 x 200 cropped)</h5>
+		<p><img data-src="01.jpg" class="img-fitter" width="150" height="200"></p>
+		<pre>&lt;img data-src="01.jpg" class="img-fitter" width="150" height="200"&gt;</pre>
+	</section>
+	<section>
+		<h5>Horizon to much Horizon (200 x 80 cropped)</h5>
+		<p><img data-src="01.jpg" class="img-fitter" width="200" height="80"></p>
+		<pre>&lt;img data-src="01.jpg" class="img-fitter" width="200" height="80"&gt;</pre>
+	</section>
+	
+	<section>
+		<h3>Original</h3>
+		<p><img src="02.jpg"></p>
+		<pre>&lt;img src="02.jpg"&gt;</pre>
+	</section>
+	<section>
+		<h5>Square (200 x 200 cropped)</h5>
+		<p><img data-src="02.jpg" class="img-fitter" width="200" height="200"></p>
+		<pre>&lt;img data-src="02.jpg" class="img-fitter" width="200" height="200"&gt;</pre>
+	</section>
+	<section>
+		<h5>Vertical to Horizon (200 x 150 cropped)</h5>
+		<p><img data-src="02.jpg" class="img-fitter" width="200" height="150"></p>
+		<pre>&lt;img data-src="02.jpg" class="img-fitter" width="200" height="150"&gt;</pre>
+	</section>
+	<section>
+		<h5>Vertical to much Vertical (80 x 200 cropped)</h5>
+		<p><img data-src="02.jpg" class="img-fitter" width="80" height="200"></p>
+		<pre>&lt;img data-src="02.jpg" class="img-fitter" width="80" height="200"&gt;</pre>
+	</section>
 
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../src/jquery.imgFitter.js"></script>
 <script type="text/javascript">
